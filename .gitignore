@@ -1,0 +1,100 @@
+# ========================================
+# 공통: 운영체제 및 로그
+# ========================================
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+*.log
+logs/
+
+
+# ========================================
+# 환경변수 및 비밀 설정
+# API 키, DB 비밀번호 등
+# ========================================
+.env
+.env.*
+!.env.example
+!.env.*.example
+
+# 개인 개발 환경 및 운영 환경의 비밀 설정
+application-local.properties
+application-local.yml
+application-local.yaml
+
+application-secrets.properties
+application-secrets.yml
+application-secrets.yaml
+
+
+# ========================================
+# Vue / Vite / Node.js
+# ========================================
+node_modules/
+dist/
+.vite/
+coverage/
+
+*.tsbuildinfo
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+
+# ========================================
+# Java / Spring Boot
+# ========================================
+target/
+build/
+.gradle/
+out/
+
+*.class
+
+
+# ========================================
+# Python / AI
+# ========================================
+__pycache__/
+*.py[cod]
+
+.venv/
+venv/
+env/
+
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# 학습 과정에서 생성되는 결과
+/prediction/checkpoints/
+/prediction/runs/
+/prediction/outputs/
+
+# 원본 학습 데이터 및 가공 데이터
+/prediction/data/raw/
+/prediction/data/processed/
+
+
+# ========================================
+# IDE 개인 설정
+# ========================================
+.idea/
+*.iml
+
+# VS Code: 공유할 설정만 허용
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/launch.json
+!.vscode/tasks.json
+
+# Eclipse / Spring Tool Suite
+.classpath
+.project
+.settings/
+.metadata/
